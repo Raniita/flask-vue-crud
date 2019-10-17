@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 import uuid
+import stripe
 
 # configuration
 DEBUG = True
@@ -92,6 +93,9 @@ def single_book(book_id):
         remove_book(book_id)
         response_object['message'] = 'Book removed!'
     return jsonify(response_object)
+
+# purchase a book
+
 
 if __name__ == '__main__':
     app.run()
