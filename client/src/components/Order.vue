@@ -134,20 +134,19 @@ export default {
                     // eslint-disable-next-line
                     console.error(response);
                 } else {
-                    // pass
                     const payload = {
                         book: this.book,
                         token: response.id,
                     };
                     const path = 'http://localhost:5000/charge';
                     axios.post(path, payload)
-                         .then(() => {
-                             this.$route.push({path: '/'});
-                         })
-                         .catch((error) => {
-                             // eslint-disable-next-line
-                             console.error(response);
-                         });
+                      .then((res) => {
+                          this.$router.push({ path: `/complete/${res.data.charge.id}` });
+                      })
+                      .catch((error) => {
+                          // eslint-disable-next-line
+                          console.error(response);
+                      });
                 }
             });
         },
