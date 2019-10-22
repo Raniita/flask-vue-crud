@@ -124,4 +124,4 @@ def get_charge(charge_id):
     return jsonify(response_object),200
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=DEBUG)
