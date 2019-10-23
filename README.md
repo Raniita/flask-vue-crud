@@ -14,3 +14,4 @@
 * [videotutoria flask+vue+mysql](https://www.youtube.com/watch?v=q3uv5RV03Uk)
 * [postgresql+flask](https://realpython.com/flask-by-example-part-2-postgres-sqlalchemy-and-alembic/)
 * [Login](https://realpython.com/using-flask-login-for-user-management-with-flask/)
+* [easy2do jwt](https://paweljw.github.io/2017/09/vue.js-front-end-app-part-3-authentication/)
